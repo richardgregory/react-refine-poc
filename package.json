@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@pankod/refine-core": "^3.56.0",
+    "@pankod/refine-mui": "^3.41.0",
+    "@pankod/refine-nextjs-router": "^3.31.0",
+    "@pankod/refine-react-hook-form": "^3.31.0",
+    "@pankod/refine-react-router-v6": "^3.31.0",
+    "@pankod/refine-simple-rest": "^3.27.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,10 +23,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "NODE_OPTIONS=--max_old_space_size=4096 PORT=3001 next dev",
+    "build": "next build",
+    "start:prod": "next start",
+    "lint": "eslint '**/*.{js,jsx,ts,tsx}'"
   },
   "eslintConfig": {
     "extends": [

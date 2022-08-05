@@ -18,9 +18,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve",
+    "baseUrl": "./src",
+    "paths": {
+      "interfaces/*": [
+        "./interfaces/*"
+      ]
+    },
+    "incremental": true
   },
   "include": [
-    "src"
+    "src",
+    "pages",
+    "pages"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
