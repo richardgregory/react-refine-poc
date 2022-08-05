@@ -38,11 +38,8 @@ function App({ Component, pageProps }: AppProps): JSX.Element {
               resources={[
                 {
                   name: "events",
-                  list: EventList
-                },
-                {
-                  name: "events",
-                  list: EventEdit
+                  list: EventList,
+                  edit: EventEdit
                 },
               ]}
           >
